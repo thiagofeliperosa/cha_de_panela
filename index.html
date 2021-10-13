@@ -1,7 +1,25 @@
 <head>
   <title>Chá de Panela da Ana e do Thiago</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  
+  <style>
+    h1 a {
+      text-decoration: none;
+      color: white;
+    }
+
+    h1 a:hover {
+      font-weight: 350;
+      color: white;
+    }
+  </style>
+  <script>
+    let num = document.getElementById('num')
+    let men = document.getElementById('men')
+
+    function whats(num, men) {
+      window.open(`https://web.whatsapp.com/send?phone=554799612475&text=Olá,%20Ana%20sou%20a%20${men.value}%20gostaria%20de%20confirmar%20minha%20presença%20no%20chá%de%panela`);
+    }
+  </script>
 </head>
 <body>
   <div class="bg-warning p-2"><h1 class="display-4 text-center m-1 mb-2" ><a href="#">Chá de Panela da Ana e do Thiago</a></h1></div>
