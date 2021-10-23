@@ -25,7 +25,7 @@
       <div class="col-md-12 col-lg-6">
         <h3 class="text-center mb-4">Confirmação de presença</h3>
         <p class="">Para confirmar sua presenção coloque seu nome no campo abaixo e clique no botão enviar:</p>
-        <label class="mb-4">Nome: <input type="text" class="mens" id="mensagem"></label><br>
+        <label class="mb-4">Nome: <input type="text" id="mensagem"></label><br>
         <button class="btn btn-outline-warning" onclick="whats()">Enviar</button>
         
       </div>
@@ -33,10 +33,9 @@
   </div>
   <script>
     
-    let mensagem = document.getElementById("mensagem").value
-    let mens = document.getElementsByClassName("mens").value
-    function whats(mensagem, mens) {
-      console.log(mensagem, mens)
+    var mensagem = document.getElementById("mensagem").value
+    function whats(mensagem) {
+      console.log(mensagem)
       //window.open(`https://web.whatsapp.com/send?phone=554799612475&text=Olá,%20Ana%20sou%20a%20${men}%20gostaria%20de%20confirmar%20minha%20presença%20no%20cha%de%panela`);
     }
   </script>
